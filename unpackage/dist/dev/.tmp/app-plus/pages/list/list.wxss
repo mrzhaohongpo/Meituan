@@ -1,0 +1,22 @@
+
+.scroll-view_H {
+	white-space: nowrap;
+	width: 100%;
+}
+.scroll-view-item_H {
+	display: inline-block;
+	width: 20%;
+	height: 90rpx;
+	margin: 0rpx 4rpx;
+	line-height: 100rpx;
+	text-align: center;
+	font-size: 36rpx;
+}
+.navs {
+	border-bottom: 1rpx solid #87CEEB;
+}
+.lists {
+	background: #555;
+	color: #fff;
+}
+

@@ -1,0 +1,71 @@
+
+.tops {
+	color: #fff;
+	font-size: 36rpx;
+	background: skyblue;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.tops1 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.head {
+	margin-top: 12rpx;
+}
+.head ._p {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	background: #fff;
+	height: 89rpx;
+	line-height: 89rpx;
+}
+.head ._p:nth-child(even){
+	margin-bottom: 12rpx;
+}
+.head ._p:nth-child(odd) {
+	border-bottom:2rpx solid #ccc;
+}
+.head .icons {
+	display: inline-block;
+	font-size: 50rpx;
+	margin:0rpx 10rpx;
+	color: #F77412;
+}
+.head .headleft {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
