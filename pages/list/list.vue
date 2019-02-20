@@ -34,14 +34,12 @@ export default {
 	methods: {
 		navClik(index) {
 			for(let i in this.navs) {
-				console.log(index,i);
 				if(index === parseInt(i)) {
 					this.navs[i].actions = 'lists';
 				} else {
 					this.navs[i].actions = 'off';
 				}
 			}
-			console.log(this.navs);
 		},
 		
 	}
@@ -66,7 +64,7 @@ export default {
 		border-bottom: 1upx solid #87CEEB;
 	}
 	.lists {
-		background: #555;
+		background: #87CEEB;
 		color: #fff;
 	}
 </style>

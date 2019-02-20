@@ -1,16 +1,18 @@
 <template>
 	<view id="login">
-		<view class="login1">
-			<view class="login_wid">账号</view>
-			<input type="text" placeholder="请输入人账号">
-		</view>
-		<view  class="login2">
-			<view class="login_wid">密码</view>
-			<input type="text" :password="ispassword" placeholder="请输入密码">
-			<rich-text class="iconlogo iconfont" name="i" @click="iconlogo" :nodes="icon" :class="iconSe"></rich-text>
-		</view>
-		<button type="primary" hover-class="hovebtn" class="loginto">登陆</button>
-		<button type="warn" class="loginout">注销</button>
+		<form @submit="login">
+			<view class="login1">
+				<view class="login_wid">账号</view>
+				<input type="text" name="namevalue" placeholder="请输入人账号">
+			</view>
+			<view  class="login2">
+				<view class="login_wid">密码</view>
+				<input type="text" :password="ispassword" name="word" placeholder="请输入密码">
+				<rich-text class="iconlogo iconfont" name="i" @click="iconlogo" :nodes="icon" :class="iconSe"></rich-text>
+			</view>
+			<button type="primary" hover-class="hovebtn" formType="submit" class="loginto">登陆</button>
+			<button type="warn" class="loginout">免费注册</button>
+		</form>
 	</view>
 </template>
 
@@ -20,23 +22,29 @@ export default {
 	data() {
 		return {
 			ispassword: true,
-			icon: '&#xe77d;',
+			icon: '&#xe67d;',
 			iconSe: 'null'
 		}
 	},
 	methods: {
 		iconlogo() {
-			//密码 --眼睛切换
-			if(this.icon === '&#xe77d;') {
-				this.icon = '&#xe67d;';
+			//密码 --眼睛切换  闭眼  xe77d睁眼
+			if(this.icon === '&#xe67d;') {
+				this.icon = '&#xe77d;';
 				this.iconSe = 'iconSe';
 				this.ispassword = false;
-			} else if(this.icon === '&#xe67d;') {
-				this.icon = '&#xe77d;';
+			} else if(this.icon === '&#xe77d;') {
+				this.icon = '&#xe67d;';
 				this.iconSe = null;
 				this.ispassword = true;
 			}
 			console.log(this.icon);
+		},
+		login(e) {
+			//登陆
+			var name = e.detail.value.namevalue;
+			var pword = e.detail.value.word;
+			console.log('用户名：'+name,'密码：'+pword);
 		}
 	}
 }

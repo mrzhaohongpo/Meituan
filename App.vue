@@ -61,7 +61,9 @@
 	
 	body {
 		background: #EFEFEF;
+		color: #262626
 	}
+	
 	/* uni.css - 通用组件、模板样式库，可以当作一套ui库应用 */
 	@import './common/uni.css';
 
