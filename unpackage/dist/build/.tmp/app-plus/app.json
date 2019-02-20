@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/list/list",
+    "pages/myuse/myuser",
+    "pages/myuse/login"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#2F85FC",
+    "backgroundColor": "#FFFFFF",
+    "enablePullDownRefresh": true
+  },
+  "usingComponents": {},
+  "tabBar": {
+    "color": "green",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "text": "资讯",
+        "iconPath": "static/images/home.png",
+        "selectedIconPath": "static/images/home-active.png"
+      },
+      {
+        "pagePath": "pages/myuse/myuser",
+        "text": "我的",
+        "iconPath": "static/images/center.png",
+        "selectedIconPath": "static/images/center-active.png"
+      }
+    ]
+  },
+  "splashscreen": {
+    "autoclose": true
+  },
+  "appname": "Meituan"
+}

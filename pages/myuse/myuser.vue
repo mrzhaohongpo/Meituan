@@ -5,7 +5,7 @@
 				<image style="width: 150upx;height: 150upx;margin: 10upx" src="../../static/images/logo.png"></image>
 				<text>Hi,您未登录</text>
 			</view>
-			<span class="iconfont">&#xe663;</span>
+			<span class="iconfont" @click="todoinfo">&#xe663;</span>
 		</view>
 		<view class="head">
 			<p v-for="(item,index) in lists" :key="item.id">
@@ -35,8 +35,8 @@ export default {
 	},
 	methods: {
 		todoinfo() {
-			uni.redrecTo({
-				
+			uni.navigateTo({
+				url: '/pages/myuse/login'
 			})
 		}
 	}

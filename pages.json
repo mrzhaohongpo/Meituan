@@ -15,6 +15,14 @@
 				"navigationBarBackgroundColor": "#87CEEB",
 				"navigationBarTitleText": "个人中心"
 			}
+		},
+		{
+			"path": "pages/myuse/login",
+			"style": {
+				"navigationStyle": "default",
+				"navigationBarBackgroundColor": "#87CEEB",
+				"navigationBarTitleText": "登陆"
+			}
 		}
 	],
 	"tabBar": {
@@ -34,9 +42,8 @@
 	},
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "新闻资讯",
 		"navigationBarBackgroundColor": "#2F85FC",
 		"backgroundColor": "#FFFFFF",
-		"enablePullDownRefresh": "true"
+		"enablePullDownRefresh": true
 	}
 }

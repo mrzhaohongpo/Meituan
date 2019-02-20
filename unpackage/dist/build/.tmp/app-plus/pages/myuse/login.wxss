@@ -1,0 +1,55 @@
+
+.login1,.login2 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	height: 100rpx;
+	background: #FFFFFF;
+	font-size: 36rpx;
+	margin: 20rpx 0rpx;
+	padding-left: 10rpx;
+	padding-right: 10rpx;
+}
+.login2 {
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+#login .login2 {
+	margin-bottom: 80rpx;
+}
+#login .login1 {
+	margin-top: 80rpx;
+}
+.login1 ._input,.login2 ._input {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+}
+.iconSe {
+	color: #F56514;
+}
+.iconlogo {
+	display: inline-block;
+	font-size: 45rpx;
+	padding-left: 10rpx;
+	padding-right: 10rpx;
+}
+.login_wid {
+	width: 80rpx;
+	padding: 10rpx;
+}
+#login .hovebtn {
+	background: #F56514;
+}
+.loginto {
+	margin-bottom: 20rpx;
+}
+
